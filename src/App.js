@@ -98,6 +98,14 @@ const App = () => {
             rows={filteredData.map((row, index) => ({ id: index, ...row }))}
             columns={columns}
             disableSelectionOnClick
+            initialState={{
+              pagination: {
+                paginationModel: {
+                  pageSize: 15,
+                },
+              },
+            }}
+            pageSizeOptions={[15, 25, 35]}
             autoHeight
             sx={{
               "& .MuiDataGrid-root": {

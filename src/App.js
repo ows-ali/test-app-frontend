@@ -9,7 +9,7 @@ const App = () => {
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/data")
+    fetch("https://test-app-backend-agr5.onrender.com/data")
       .then((response) => response.json())
       .then((jsonData) => {
         let filtered = [];
